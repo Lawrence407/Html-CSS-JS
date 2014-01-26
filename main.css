@@ -14,8 +14,10 @@ h2,h3,h4,h5,h6 {
 p {
 	font-family: "sans serif";
 	text-indent:2em;
-	colot: black;
-	background-color: white;
+/*	color: black;*/
+	background-image: url(leaf.jpg);
+	background-repeat: repeat-x;
+	background-position:left;
 	padding:20px;
 }
 li strong{
