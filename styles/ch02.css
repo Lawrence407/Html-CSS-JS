@@ -1,0 +1,32 @@
+div {
+	float: left;
+	height:245px;
+	text-align:left;
+	border:solid #000 3px;
+}
+#header {
+	width:100%;
+	border: 0px;
+	height: 50px;
+	/*font-family:Segoe Print;*/
+	color: pink;
+}
+#main {
+	background-color: grey;
+	height: 500px;
+}
+.guess_box {
+	height:245px;
+}
+
+p {
+	font-family:Segoe Print;
+
+}
+
+
+/*
+this is a test...
+
+go go go , fighting
+*/
