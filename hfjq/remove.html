@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Remove things</title>
+	</head>
+	<body>
+		<div>My To Do List</div>
+		<ol>
+			<li>Learn jQuery</li>
+			<li>Ask the Boss for a raise</li>
+			<li>Tweet about my raise</li>
+		</ol>
+		<button id="btnRemove">
+		<script src="scripts/jquery-1.11.0.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#btnRemove").click(function() {
+					$("li").remove();
+				});
+			});
+		</script>
+	</body>
+</html>
