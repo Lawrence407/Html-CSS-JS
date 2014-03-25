@@ -1,23 +1,33 @@
 $(document).ready(function() {
 	$(".guess_box").click(checkForCode);
+	var test = "test begin->";
 	function checkForCode() {
-		var discount = Math.floor((Math.random()*5) + 5);
-		var discount_msg = "<p>Your Discount is "+discount+"%</p>";
-		//$(".guess_box p").remove();
-		var hideCode = function() {
-			var numRand = getRandom(4);
-			$(".guess_box").each(function(index, value) {
-				if(numRand == index) {
-					$(this).append("<span id='has_discount'></span>");
-					return false;
-				}
-			});
+		test = test + "checkForCode->";
+		var discount;
+		if($.contains(this, document.getElementById("has_discount"))) {
+			var my_num = getRandom(5);
+			discount = "<p>Your discount is "+my_num+"%</p>";
 		}
-		$(this).append(discount_msg);
+		else {
+			discount = "<p>Sorry, no discount this time!</p>";
+		}	
+		$(this).append(discount);
 		$(".guess_box").unbind("click");
-		var total = multiply(4, 6);
-		welcome("PinkingS " + total);
-	}			
+	}
+	//alert("test");
+	hideCode();
+	var hideCode = function() {
+		test = test + "hideCode->";
+		var numRand = getRandom(4);
+		alert("Hello world "+numRand);
+		$(".guess_box").each(function(index, value) {
+			if(numRand == index) {
+				$(this).append("<span id='has_discount'></span>");
+				return false;
+			}
+		});
+	}
+	alert("iiiii"+test);
 });
 
 function getRandom(num) {
